@@ -13,3 +13,20 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+//= require bootstrap
+
+$(document).ready(function(){
+
+  $("input.btn.btn-success").on("click", function() {
+    $('#error-field').html('');
+    if($('#name-field input').val() ===''){
+      $('#error-field').append('<br><div class="alert alert-danger">Oh snap! No name</div>')
+    }
+    if($('#email-field input').val() ==='') {
+       $('#error-field').append('<br><div class="alert alert-danger">Oh snap! No email!</div>')
+    }
+    if($('#email-field input').val() !=='' && $('#name-field input').val() !=='')  {
+      $('#error-field').append('<br><div class="alert alert-success">Thanks!</div>')
+    }
+  })
+});

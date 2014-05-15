@@ -3,6 +3,8 @@ class SessionsController < ApplicationController
   before_action :require_signed_in!, :only => [:destroy]
 
   def new
+    @user = User.new
+    @page = "sign in"
   end
 
   def create

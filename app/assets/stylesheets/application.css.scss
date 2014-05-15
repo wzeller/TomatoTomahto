@@ -11,3 +11,13 @@
  *= require_self
  *= require_tree .
  */
+
+@import 'bootstrap';
+//.navbar-nav > li > a {
+//  padding-top: 15px;
+//  padding-bottom: 0px;
+//}
+.navbar-nav > li.not_tomato {
+  padding-top: 17px;
+
+}
