@@ -27,6 +27,7 @@
         <li><a href='<%= home_url %>'><%= image_tag('tomato.jpg', size: "50x50", class: "img-circle")%></a></li>
         <li class="not_tomato"><%= link_to "About", about_url %></li>
         <li class="not_tomato"><%= link_to "Contact", contact_url %></li>
+        <li class="not_tomato"><%= link_to "History", history_url %></li>
 
       <% if signed_in? %>
           <li class="not_tomato"><a href='#'>Signed in as: <%= current_user.username %></a></li>

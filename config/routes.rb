@@ -5,6 +5,7 @@ NewAuthDemo::Application.routes.draw do
   get "/about", to: "pages#about"
   get "/home", to: "pages#home"
   get "/contact", to: "pages#contact"
+  get "/history", to: "pages#history"
 
   root :to => "users#show"
 end
