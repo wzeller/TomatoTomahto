@@ -17,6 +17,8 @@
 
 $(document).ready(function(){
 
+  $("a").tooltip();
+
   $("input.btn.btn-success").on("click", function() {
     $('#error-field').html('');
     if($('#name-field input').val() ===''){
